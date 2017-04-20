@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FEWD Unit 3 Project</title>
         <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -19,60 +20,63 @@
       </div>
 
       <form action="index.html" method="post">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user_name" placeholder="required" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="user_email" placeholder="required" required>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="user_phone" placeholder="Phone Number">
+          <label for="address">Street Adress</label>
+          <input type="text" id="address" name="user_adress" placeholder="Street Adress">
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city" placeholder="City">
+          <select id="state" name="user_name">
+            <option value="Alabama">Alabama (AL)</option>
+            <option value="Alaska">Alaska (AK)</option>
+            <option value="Arizona">Arizona (AR)</option>
+            <option value="Califonia">Califonia (CA)</option>
+            <option value="Colorado">Colorado (CO)</option>
+            <option value="Florida">Florida (FL)</option>
+            <option value="Hawai">Hawai (HI)</option>
+            <option value="Kansas">Kansas (KS)</option>
+            <option value="Kentucky">Kentucky (KY)</option>
+            <option value="Maine">Maine (ME)</option>
+            <option value="Maryland">Maryland (MD)</option>
+            <option value="Massachusetts">Massachusetts (MA)</option>
+            <option value="Michigan">Michigan (MI)</option>
+            <option value="Nebraska">Nebraska (NE)</option>
+            <option value="Nevada">Nevada (NV)</option>
+            <option value="New York">New York (NY)</option>
+            <option value="Ohio">Ohio (OH)</option>
+            <option value="Oklahoma">Oklahoma (OK)</option>
+            <option value="Oregon">Oregon (OR)</option>
+            <option value="Texas">Texas (TX)</option>
+          </select>
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="user_zipcode" placeholder="Zip Code">
+        </fieldset><!-- End Contact Information -->
         
-        <h2>Contact Information</h2>
-        
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="user_email">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user_phone">
-        <label for="address">Street Adress</label>
-        <input type="text" id="address" name="user_adress">
-        <label for="city">City</label>
-        <input type="text" id="city" name="user_city">
-        <select id="state" name="user_name">
-          <option value="Alabama">Alabama (AL)</option>
-          <option value="Alaska">Alaska (AK)</option>
-          <option value="Arizona">Arizona (AR)</option>
-          <option value="Califonia">Califonia (CA)</option>
-          <option value="Colorado">Colorado (CO)</option>
-          <option value="Florida">Florida (FL)</option>
-          <option value="Hawai">Hawai (HI)</option>
-          <option value="Kansas">Kansas (KS)</option>
-          <option value="Kentucky">Kentucky (KY)</option>
-          <option value="Maine">Maine (ME)</option>
-          <option value="Maryland">Maryland (MD)</option>
-          <option value="Massachusetts">Massachusetts (MA)</option>
-          <option value="Michigan">Michigan (MI)</option>
-          <option value="Nebraska">Nebraska (NE)</option>
-          <option value="Nevada">Nevada (NV)</option>
-          <option value="New York">New York (NY)</option>
-          <option value="Ohio">Ohio (OH)</option>
-          <option value="Oklahoma">Oklahoma (OK)</option>
-          <option value="Oregon">Oregon (OR)</option>
-          <option value="Texas">Texas (TX)</option>
-        </select>
-        <label for="zip">Zip Code</label>
-        <input type="text" id="zip" name="user_zipcode">
-        
-        <h2>Newsletter</h2>
-        <p>Select the newsletters you would like to recieve</p>
-        
-        <input type="checkbox" id="html-news" value="html-news" name="html-news"><label for="html-news"> HTML News</label><br>
-        <input type="checkbox" id="css-news" value="css-news" name="css-news"><label for="css-news"> CSS News</label><br>
-        <input type="checkbox" id="javascript-news" value="javascript-news" name="javascript-news"><label for="javascript-news"> JavaScript News</label>
-        
-        <p>Newsletter format</p>
-        
-        <input type="radio" id="html-radio" value="html-radio" name="news-radio"><label for="news-radio"> HTML</label><br>
-        <input type="radio" id="text-radio" value="text-radio" name="news-radio"><label for="news-radio"> Plain text</label>
-        
-        <p>Other topics you'd like to hear about</p>
-        <textarea type="text" id="topics" name="user_topics"></textarea>
-        
-        <button type="submit">Sign Up</button>
+        <fieldset>
+          <legend>Newsletter</legend>
+          <p>Select the newsletters you would like to recieve</p>
+
+          <input type="checkbox" id="html-news" value="html-news" name="html-news"><label for="html-news"> HTML News</label><br>
+          <input type="checkbox" id="css-news" value="css-news" name="css-news"><label for="css-news"> CSS News</label><br>
+          <input type="checkbox" id="javascript-news" value="javascript-news" name="javascript-news"><label for="javascript-news"> JavaScript News</label>
+
+          <p>Newsletter format</p>
+
+          <input type="radio" id="html-radio" value="html-radio" name="html-radio"><label for="html-radio"> HTML</label><br>
+          <input type="radio" id="text-radio" value="text-radio" name="html-radio"><label for="text-radio"> Plain text</label>
+
+          <p>Other topics you'd like to hear about</p>
+          <textarea type="text" id="topics" name="user_topics" placeholder="Tell us your favorite topics."></textarea>
+
+          <button type="submit">Sign Up</button>
+        </fieldset><!-- End Newsletter -->
       </form>
       
       <footer>
