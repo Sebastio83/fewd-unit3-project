@@ -1,0 +1,131 @@
+/***************************************
+  Basic Styles
+***************************************/
+
+body {
+  font-family: 'Merriweather', serif;
+  background: #fff;
+  box-sizing: border-box;
+  max-width: 400px;
+  margin: auto;
+  padding: 0;
+}
+
+/* Headings */
+
+h1 {
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.953rem
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.563rem;
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  color: #aaafaf;
+  font-size: 1.2rem
+}
+
+/* Border Styles*/
+
+.heading {
+  border-bottom: 4px solid black;
+}
+
+hr {
+  border-top: 2px solid black;
+  margin-top: 0.3em;
+}
+
+/* Fieldset */
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+
+/* Input Fields */
+
+label {
+  color: #aaafaf;
+  display: inline-block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 15px 5px;
+  background-color: #e8eeef;
+  color: #aaafaf;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  height: 3em;
+  width: 103%;
+}
+
+#zip {
+  max-width: 45%;
+}
+
+/* Placeholder Styles for Cross Browser Compatibility */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #aaafaf;
+    text-align: right;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #aaafaf;
+   opacity:  1;
+    text-align: right;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #aaafaf;
+   opacity:  1;
+   text-align: right;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #aaafaf;
+   text-align: right;
+}
+
+.border {
+  border-top: 2px solid black;
+}
+
+
+/***************************************
+  Media Queries
+***************************************/
+
+@media (min-width: 768px) {
+  
+  body {
+    background-color: tomato;
+  }
+}
