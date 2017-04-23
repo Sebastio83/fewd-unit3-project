@@ -2,22 +2,27 @@
   Basic Styles
 ***************************************/
 
-body {
-  font-family: 'Merriweather', serif;
-  background: #fff;
-  box-sizing: border-box;
-  max-width: 400px;
-  margin: auto;
+* {
   padding: 0;
+  margin: 0;
 }
 
-/* Headings */
+body {
+  font-family: 'Merriweather', Palatino, Georgia, serif;
+  background: #fff;
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+}
+
+/* Text Styles */
 
 h1 {
-  color: white;
-  background: black;
+  color: #fff;
+  background: #000;
   text-align: center;
   padding: 1em;
+  margin-top: 0;
   font-size: 1.953rem
 }
 
@@ -27,11 +32,20 @@ h2 {
 }
 
 h3 {
+  margin: 0.5em;
   text-align: center;
   font-weight: normal;
   color: #aaafaf;
   font-size: 1.2rem
 }
+
+p {
+  margin: 0.5em;
+  text-align: left;
+  font-weight: normal;
+  color: #869499;
+}
+
 
 /* Border Styles*/
 
@@ -41,7 +55,7 @@ h3 {
 
 hr {
   border-top: 2px solid black;
-  margin-top: 0.3em;
+  margin: 0.3em 0;
 }
 
 /* Fieldset */
@@ -53,7 +67,17 @@ fieldset {
 legend {
   font-weight: bold;
   font-size: 1.25rem;
-  padding: 1rem 0;
+  padding: 1rem;
+}
+
+.first {
+  background-color: #FFF3D2;
+  padding: 0.5em;
+}
+
+.second {
+  background-color: #FFEFDF;
+  padding: 0.5em;
 }
 
 /* Input Fields */
@@ -62,7 +86,7 @@ label {
   color: #aaafaf;
   display: inline-block;
   width: 100%;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5em;
 }
 
 input[type="text"],
@@ -73,24 +97,60 @@ select {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
-  height: auto;
+  height: 1.999em;
   width: 100%;
-  margin: 0;
-  outline: 0;
-  padding: 15px 5px;
   background-color: #e8eeef;
-  color: #aaafaf;
+  color: #869499;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 1em;
+}
+
+.inline {
+  display: inline;
+  margin: 0.5em;
+}
+
 select {
   height: 3em;
-  width: 103%;
 }
 
 #zip {
-  max-width: 45%;
+  max-width: 40%;
+}
+
+textarea {
+    min-height: 5em;
+}
+
+/* Submit Button */
+
+button{
+  font-family: 'Merriweather', Palatino, Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #869499;
+  display: inline-block;
+  width:100%;
+  padding: 0.5em;
+  border-radius: 0.25em;
+}
+
+/* Copyright */
+
+footer p {
+  text-align: center;
+  font-size: 0.707rem;
+}
+
+span {
+  font-style: italic;
 }
 
 /* Placeholder Styles for Cross Browser Compatibility */
@@ -98,34 +158,58 @@ select {
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #aaafaf;
     text-align: right;
+    padding-right: 0.5em;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color: #aaafaf;
    opacity:  1;
-    text-align: right;
+   text-align: right;
+   padding-right: 0.5em;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color: #aaafaf;
    opacity:  1;
    text-align: right;
+   padding-right: 0.5em;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color: #aaafaf;
    text-align: right;
+   padding-right: 0.5em;
 }
-
-.border {
-  border-top: 2px solid black;
-}
-
 
 /***************************************
   Media Queries
 ***************************************/
 
 @media (min-width: 768px) {
+ 
   
-  body {
-    background-color: tomato;
-  }
+  
 }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
