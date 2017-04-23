@@ -3,8 +3,7 @@
 ***************************************/
 
 * {
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -58,7 +57,9 @@ hr {
   margin: 0.3em 0;
 }
 
-/* Fieldset */
+/***************************************
+  Input Fields
+***************************************/
 
 fieldset {
   border: none;
@@ -69,18 +70,6 @@ legend {
   font-size: 1.25rem;
   padding: 1rem;
 }
-
-.first {
-  background-color: #FFF3D2;
-  padding: 0.5em;
-}
-
-.second {
-  background-color: #FFEFDF;
-  padding: 0.5em;
-}
-
-/* Input Fields */
 
 label {
   color: #aaafaf;
@@ -94,15 +83,14 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
-  border: none;
   font-size: 16px;
   height: 1.999em;
   width: 100%;
-  background-color: #e8eeef;
+  background: #e8eeef;
   color: #869499;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  outline: 2px solid #e8eeef;;
+  margin-bottom: 1.999em;
+  transition: border .5s, outline .5s;
 }
 
 input[type="checkbox"],
@@ -110,21 +98,33 @@ input[type="radio"] {
   margin: 1em;
 }
 
-.inline {
-  display: inline;
-  margin: 0.5em;
+select {
+  height: 1.999em;
 }
 
-select {
-  height: 3em;
+textarea {
+    min-height: 5em;
 }
 
 #zip {
   max-width: 40%;
 }
 
-textarea {
-    min-height: 5em;
+/* Added classes */
+
+.first {
+  background-color: #FFF3D2;
+  padding: 0.5em;
+}
+
+.second {
+  background-color: #FFEFDF;
+  padding: 0.5em;
+}
+
+.inline {
+  display: inline;
+  margin: 0.5em;
 }
 
 /* Submit Button */
@@ -134,8 +134,8 @@ button{
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  color: white;
-  background-color: #869499;
+  color: #fff;
+  background: #869499;
   display: inline-block;
   width:100%;
   padding: 0.5em;
@@ -179,12 +179,50 @@ span {
 }
 
 /***************************************
+  Transitions
+***************************************/
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #7F92CC;
+  background: #fff;
+  
+}
+
+button:focus {
+  outline: 4px solid #7F92CC;
+}
+
+button:hover {
+  background: #fff;
+  color: #869499;
+  transition: background 0.5s, color 0.5s;
+}
+
+/***************************************
   Media Queries
 ***************************************/
 
 @media (min-width: 768px) {
- 
   
+  body {
+    max-width: 1000px;
+  }
+ 
+  label {
+    display: inline-block;
+    max-width: 20%;
+    margin-right: 1.737em;
+  }
+  
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select{
+    display: inline-block;
+    max-width: 75%;
+  }
   
 }
   
